@@ -34,5 +34,22 @@ https://developers.dingtalk.com/document/tutorial/develop-mini-programs
 ![avatar](https://img.alicdn.com/imgextra/i4/O1CN01nenW4l23aATgHh9sR_!!6000000007271-2-tps-1850-1100.png)
 #### 通过手机钉钉扫码验证
 
+# 发布小程序
+#### 完成小程序调试开发后，你可以参考本部分操作上传和发布小程序：
+#### 单击上传，确认小程序版本，然后再次单击上传。
+![avatar](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2791480061/p133520.png)
+#### 上传成功后，打开开发者后台，在应用详情页面，单击版本管理与发布，然后选择已上传的版本，再单击发布。
+![avatar](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3494887161/p261020.png)
+
+#### 默认发布后企业内部成员可使用该版本的应用。您可以选择使用该应用的用户范围，然后单击保存。
+
+![avatar](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3494887161/p261022.png)
+
+
+# 完成发布
+#### 小程序发布后，用户可在工作台中使用已发布的小程序应用。
+![avatar](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7449134161/p243723.png)
+
+
 # 文档
 https://developers.dingtalk.com/document/app/features
