@@ -1,0 +1,9 @@
+<view>
+    <button type="primary" size="" onTap="onTap">打开个人授权弹窗</button>
+
+    <button type="primary" size="" onTap="onOrgTap">打开组织授权弹窗</button>
+
+    <button type="primary" size="" onTap="onTapMini">navigateToMiniProgram</button>
+
+    <button type="primary" size="" onTap="onCancelTap">取消授权</button>
+</view>
