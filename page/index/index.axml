@@ -1,9 +1,23 @@
 <view>
-    <button type="primary" size="" onTap="onTap">打开个人授权弹窗</button>
+个人信息授权Demo
+    <view>
+        <button
+          onTap="openApp"
+        >
+          打开授权半弹窗
+          </button>
+        <button
+          onTap="openCancelPage"
+        >
+          打开取消授权半弹窗
+        </button>
+    </view>
+    <view class="row">CorpId:{{corpId}}</view>
 
-    <button type="primary" size="" onTap="onOrgTap">打开组织授权弹窗</button>
-
-    <button type="primary" size="" onTap="onTapMini">navigateToMiniProgram</button>
-
-    <button type="primary" size="" onTap="onCancelTap">取消授权</button>
+    <view hidden="{{hideList}}">
+        <view class="row">AuthCode:{{authCode}}</view>
+        <view class="row">userId:{{userId}}</view>
+        <view class="row">name:{{userName}}</view>
+    </view>
+    
 </view>
