@@ -16,6 +16,8 @@ $ npm install dingtalk-design-libs
 
 ### 开发
 Dev
+必须在真机调试或者预览到手机上的时候才可以吊起认证弹窗.
+钉钉开发者工具中不支持吊起
 
 # 使用小程序开发者工具
 https://developers.dingtalk.com/document/tutorial/develop-mini-programs
