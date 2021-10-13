@@ -83,8 +83,7 @@ Page({
       path: "pages/cancel/index",  // 不要改
       panelHeight: "percent50",
       extraData: {
-        clientId: "dingwlanwvdmrtjjwdmd", // 应用ID(唯一标识)
-        corpId: "ding9f50b15bccd16741", //三方企业ID
+        clientId: "dingwlanwxxx", // 应用ID(唯一标识)
         rpcScope: "Contact.User.Read",
         fieldScope: "Contact.User.mobile",
         type: 0,
@@ -105,8 +104,7 @@ Page({
       path: "pages/home/home", // 不要改
       panelHeight: "percent50",
       extraData: {
-        clientId: "dingwlanwvdmrtjjwdmd", // 应用ID(唯一标识)
-        corpId: "ding9f50b15bccd16741", //三方企业ID
+        clientId: "dingwlanwxxx", // 应用ID(唯一标识)
         rpcScope: "Contact.User.Read",
         fieldScope: "Contact.User.mobile",
         type: 0,
