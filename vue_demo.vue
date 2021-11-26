@@ -5,44 +5,49 @@
 </template>
 
 <script>
+import dd from 'dingtalk-jsapi';
 import {
   openAuthMiniApp,
 } from "dingtalk-design-libs/biz/openAuthMiniApp";
 export default {
   methods: {
     openMiniApp() {
-      openAuthMiniApp({
-        panelHeight: "percent75",
-        path: "pages/home/home", //不要改,这里是小程序dingwlanwvdmrtjjwdmd下的一个页面地址
-        extraData: {
-          clientId: "dingwlanwxxx", // 应用ID(唯一标识)
-          rpcScope: "Contact.User.Read",
-          fieldScope: "Contact.User.mobile",
-          type: 0,
-          ext: JSON.stringify({}),
-          from: "",
-        },
-      }).then((res) => {
-        // 处理返回数据
-        console.log(res);
-      });
+      dd.ready(()=>{
+        openAuthMiniApp({
+          panelHeight: "percent75",
+          path: "pages/home/home", //不要改,这里是小程序dingwlanwvdmrtjjwdmd下的一个页面地址
+          extraData: {
+            clientId: "dingwlanwxxx", // 应用ID(唯一标识)
+            rpcScope: "Contact.User.Read",
+            fieldScope: "Contact.User.mobile",
+            type: 0,
+            ext: JSON.stringify({}),
+            from: "",
+          },
+        }).then((res) => {
+          // 处理返回数据
+          console.log(res);
+        });
+      })
     },
 
     cancelMiniApp() {
-      openAuthMiniApp({
-        path: "pages/cancel/index",
-        extraData: {
-          clientId: "dingwlanwxxx", // 应用ID(唯一标识)
-          rpcScope: "Contact.User.Read",
-          fieldScope: "Contact.User.mobile",
-          type: 0,
-          ext: JSON.stringify({}),
-          from: "",
-        },
-      }).then((res) => {
-        // 处理返回数据
-        console.log(res);
-      });
+      dd.ready(()=>{
+        openAuthMiniApp({
+          path: "pages/cancel/index",
+          extraData: {
+            clientId: "dingwlanwxxx", // 应用ID(唯一标识)
+            rpcScope: "Contact.User.Read",
+            fieldScope: "Contact.User.mobile",
+            type: 0,
+            ext: JSON.stringify({}),
+            from: "",
+          },
+        }).then((res) => {
+          // 处理返回数据
+          console.log(res);
+        });
+      })
     },
   },
 };
