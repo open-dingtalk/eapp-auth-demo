@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "dingtalk-jsapi": "^2.13.53",
     "dingtalk-design-libs": "^0.0.20"
   }
 }
