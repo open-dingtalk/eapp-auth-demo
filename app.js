@@ -12,6 +12,8 @@ App({
     console.log('App Show');
     onAuthAppBack(options, (data) => {
       // 这里可以对返回数据做二次处理，之后需要把数据返回到page.onShow
+      data['t']='aaaa';
+
       dd.alert({
         title: 'app is onAppShow have data ：' + JSON.stringify(data),
       });

@@ -3,7 +3,6 @@ import {
   disposeAuthData,
   offAuthListener
 } from "dingtalk-design-libs/biz/openAuthMiniApp";
-
 let app = getApp();
 
 //内网穿透工具介绍:
@@ -69,6 +68,8 @@ Page({
     this.setData({
       corpId: app.globalData.corpId,
     });
+
+    // this.loginSystem();
     // 
     // console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
     //dd.alert({content: "step1"});
@@ -76,22 +77,23 @@ Page({
   onShow(e) {
     disposeAuthData((options) => {
       dd.alert({
-        title: "disposeAuthData index",
+        title: "disposeAuthData other",
         content: JSON.stringify(options),
       });
     });
   },
   onHide(){
     dd.alert({
-      title: "onhide index",
-    });
+      title:'onHide other',
+      content:'onHide other'
+    })
     offAuthListener();
   },
   onUnload() {
     // 页面被关闭
     dd.alert({
-      title:'onUnload index',
-      content:'onUnload index'
+      title:'onUnload other',
+      content:'onUnload other'
     })
     offAuthListener();
   },
@@ -100,7 +102,7 @@ Page({
       path: "pages/cancel/index",  // 不要改
       panelHeight: "percent50",
       extraData: {
-        clientId: "dingwlanwxxx", // 应用ID(唯一标识)
+        clientId: "dingoaq7ivvvdhgnryrzm3", // 应用ID(唯一标识)
         rpcScope: "Contact.User.Read",
         fieldScope: "Contact.User.mobile",
         type: 0,
@@ -113,11 +115,6 @@ Page({
       fail: (res) => {
         console.log(JSON.stringify(res));
       },
-    });
-  },
-  openOtherPage(){
-    dd.navigateTo({
-      url: `/page/other/index?corpId=${this.corpId}`,
     });
   },
   openApp() {
